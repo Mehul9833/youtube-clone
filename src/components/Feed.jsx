@@ -10,9 +10,7 @@ const Feed = () => {
 
   useEffect(
     () => {
-      const data = fetchFromApi(
-        `search?part=snippet&q=${selectedCategory}`
-      ).then(data => {
+      fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then(data => {
         setVideos(data.items);
       });
     },
@@ -25,7 +23,7 @@ const Feed = () => {
         sx={{
           height: { sx: "auto", md: "92vh" },
           borderRight: "1px solid #3d3d3e",
-          px: { sx: 0, md: 2 },
+          px: { sx: 0, md: 2 }
         }}
       >
         <Sidebar
