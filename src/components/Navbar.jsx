@@ -14,8 +14,8 @@ const Navbar = () => {
       sx={{
         position: "sticky",
         background: "#000",
-        yop: 0,
-        justifyContent: "space-between",
+        top: 0,
+        justifyContent: "space-between"
       }}
     >
       <Link to="/" style={{ display: flexbox, alignItems: "center" }}>
